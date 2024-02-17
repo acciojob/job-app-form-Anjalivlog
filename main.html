@@ -8,12 +8,12 @@
     form div {
         margin-bottom: 20px;
     }
-    /* form fieldset {
+    form fieldset {
 		background-color: #f2f2f2;
-	} */
-    /* form fieldset legend {
+	}
+    form fieldset legend {
 		font-size: xx-large;
-	}		 */
+	}		
 	</style>	
 </head>
 
@@ -21,50 +21,51 @@
 	<!-- the entire body must be written by student -->
 	<form method="post">
 		<!--input tag  -->
-		<!-- <fieldset> -->
-			<!-- <legend>Personal Info</legend> -->
+		<fieldset>
+			<legend>Personal Info</legend>
 			<div>
 			<label for="name">Name*</label>
-		    <input id="name" type="text" required>
+		    <input id="name" type="text" name="name" required>
 		</div>
 		<div>
 			<label for="email">Email*</label>
-		    <input id="email" type="email" required>
+		    <input id="email" type="email" name="email" required>
 		</div>
 		<div>
-			<label>Select Gender*</label>
-		    <input type="radio" name="gender" required>Male
-		    <input type="radio" name="gender" required>Female
-		    <input type="radio" name="gender" required>Transgener
+			<label>Gender*</label>
+		    <input type="radio" id="male" name="gender" value="Male" required>
+			<label for="male">Male</label>
+		    <input type="radio" id="female" name="gender" value="Female" required>
+			<label for="female">Female</label>
 		</div>
 		<div>
-			<label for="laptop">Select yor favourite Laptop Brand:</label>
-		    <select id="laptop">
-			   <option>Apple</option>
-			   <option>HP</option>
-			   <option>Dell</option>
+			<label for="laptop">Laptop Brands</label>
+		    <select id="laptop" name="laptop">
+			   <option value="Apple">Apple</option>
+			   <option value="HP">HP</option>
+			   <option value="Dell">Dell</option>
 		    </select>
 	    </div>		
 		<div>
 			<label for="age">Age*</label>
-		    <input id="age" type="number" required>
+		    <input id="age" type="number" name="age" required>
 		</div>
 		<div>
 			<label for="dob">Date of Birth*</label>
-		    <input id="dob" type="date" required>
+		    <input id="dob" type="date" name="dob" required>
 		</div>
 		<div>
 			<label for="password">Password*</label>
-		    <input id="password" type="password" required>
+		    <input id="password" type="password" name="password" required>
 		</div>
 		<div>
 			<label for="portfolio">Portfolio</label>
-		    <input id="portfolio" type="url">
+		    <input id="portfolio" type="url" name="portfolio">
 		</div>
 		<div>
-			<button type="submit">Submit</button>
+			<input type="submit" value="Submit">
 		</div>
-		<!-- </fieldset> -->
+		</fieldset>
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
